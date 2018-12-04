@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  "node"
+
+cache: npm
+
+env:
+  global:
+    - NODE_ENV=test
+
+before_script:
+  - cd server-api
+  - npm install
+
+after_success: npm run coverage
