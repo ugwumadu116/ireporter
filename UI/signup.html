@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="Affordable and professional web design" />
+  <meta name="keywords" content="web design, affordable web design, professional web design" />
+  <meta name="author" content="Brad Traversy" />
+  <title>iReporter</title>
+  <link rel="stylesheet" href="./css/final.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="topic">
+        <a href="index.html">
+          <h1>iReporter</h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="final-result">
+    <div class="content">
+      <section>
+        <div class="final__register-wrapper">
+          <div class="final__register-block">
+            <h3 class="final__register-title">Create an account</h3>
+            <p>
+              Quickly &amp; easily create an account using the form below.
+            </p>
+            <form action="">
+              <label><strong>first Name</strong></label>
+              <input type="name" placeholder="firstname" name="firstname" required />
+              <label><strong>Last Name</strong></label>
+              <input type="name" placeholder="lastname" name="lastname" required />
+              <label><strong>other Name</strong></label>
+              <input type="name" placeholder="othername" name="othername" required />
+              <label><strong>User Name</strong></label>
+              <input type="name" placeholder="username" name="username" required />
+              <label><strong>Email</strong></label>
+              <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email"
+                required />
+              <label><strong>Phone Number</strong></label>
+              <input type="phone" pattern="[0-9]+" placeholder="phonenumber" name="phonenumber" required />
+              <label><strong>Password</strong></label>
+              <input type="password" placeholder="Password" id="password" name="password" required />
+              <input type="submit" value="Create my account" />
+            </form>
+            <label>If you already have an Account <a href="login.html">Login</a> Here</label>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p>iReporter, Copyright &copy; 2018</p>
+  </footer>
+  <script src="js/signup.js"></script>
+</body>
+
+</html>
