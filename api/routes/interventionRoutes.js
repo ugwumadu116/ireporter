@@ -1,7 +1,7 @@
 import express from 'express';
 import interventionController from '../controllers/interventionsController';
 import midlleWareAuth from '../validator/checkAuth';
-import interventAuth from '../validator/interventionAuth';
+// import interventAuth from '../validator/interventionAuth';
 
 const router = express.Router();
 
@@ -11,8 +11,8 @@ router.post('/', midlleWareAuth, interventionController.createIntervention);
 
 router.get('/:interventionID', midlleWareAuth, interventionController.findOneIntervention);
 
-router.patch('/:interventionID', midlleWareAuth, interventAuth, interventionController.editIntervention);
+router.patch('/:interventionID', midlleWareAuth, interventionController.editIntervention);
 
-router.delete('/:interventionID', midlleWareAuth, interventAuth, interventionController.deleteIntervention);
+router.delete('/:interventionID', midlleWareAuth, interventionController.deleteIntervention);
 
 export default router;
