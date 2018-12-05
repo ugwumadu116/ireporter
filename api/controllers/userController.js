@@ -1,5 +1,5 @@
-import jwt from 'jsonwebtoken'; // for creating web token
-import bcrypt from 'bcrypt'; // for hashing password
+import jwt from 'jsonwebtoken';
+import bcrypt from 'bcrypt';
 import Users from '../db/models/userModel';
 
 class UserController {

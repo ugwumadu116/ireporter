@@ -3,7 +3,7 @@ import interventionModal from '../db/models/interventionModal';
 import redflagModal from '../db/models/redflagModal';
 
 class adminController {
-  static findAlladmins(req, res, next) {
+  static findAllAdmins(req, res, next) {
     const getAllinterventions = interventionModal.findAll();
     const getAllRedflags = redflagModal.findAll();
     res.status(200).json({
@@ -31,7 +31,7 @@ class adminController {
     }
   }
 
-  static editadmin(req, res, next) {
+  static editAdmin(req, res, next) {
     const intervention = interventionModal.findOne(req.params.adminID);
     const redflag = redflagModal.findOne(req.params.adminID);
     if (intervention) {

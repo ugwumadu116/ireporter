@@ -21,8 +21,7 @@ class User {
     return newuser;
   }
 
-  // @param {uuid} id
-  // @returns {object} user object
+
   findOne(id) {
     return this.users.find(reflect => reflect.id === id);
   }

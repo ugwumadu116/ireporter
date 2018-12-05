@@ -1,6 +1,5 @@
 import express from 'express';
 import userController from '../controllers/userController';
-// import Users from '../db/models/userModel';
 
 const router = express.Router();
 

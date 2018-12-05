@@ -1,12 +1,12 @@
 import interventionModal from '../db/models/interventionModal';
 
 class InterventionController {
-  static findAllinterventions(req, res, next) {
+  static findAllInterventions(req, res, next) {
     const getAllinterventions = interventionModal.findAll();
     res.status(200).send(getAllinterventions);
   }
 
-  static createintervention(req, res, next) {
+  static createIntervention(req, res, next) {
     const createdintervention = interventionModal.create(req.body);
     res.status(201).json({
       message: 'intervention created',
@@ -14,7 +14,7 @@ class InterventionController {
     });
   }
 
-  static findOneintervention(req, res, next) {
+  static findOneIntervention(req, res, next) {
     const intervention = interventionModal.findOne(req.params.interventionID);
     if (!intervention) {
       return res.status(404).send({ message: 'intervention not found' });
@@ -22,7 +22,7 @@ class InterventionController {
     return res.status(200).send(intervention);
   }
 
-  static editintervention(req, res, next) {
+  static editIntervention(req, res, next) {
     const intervention = interventionModal.findOne(req.params.interventionID);
     if (!intervention) {
       res.status(404).send({ message: 'intervention not found' });
@@ -31,7 +31,7 @@ class InterventionController {
     res.status(200).send(updatedintervention);
   }
 
-  static deleteintervention(req, res, next) {
+  static deleteIntervention(req, res, next) {
     const intervention = interventionModal.findOne(req.params.interventionID);
     if (!intervention) {
       res.status(404).send({ message: 'intervention not found' });

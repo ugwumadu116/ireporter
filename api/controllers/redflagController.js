@@ -25,7 +25,7 @@ class RedflagController {
     return res.status(200).send(redflag);
   }
 
-  static editredflag(req, res, next) {
+  static editRedflag(req, res, next) {
     const redflag = redflagModal.findOne(req.params.redflagID);
     if (!redflag) {
       res.status(404).send({ message: 'redflag not found' });
@@ -34,7 +34,7 @@ class RedflagController {
     res.status(200).send(updatedredflag);
   }
 
-  static deleteredflag(req, res, next) {
+  static deleteRedflag(req, res, next) {
     const redflag = redflagModal.findOne(req.params.redflagID);
     if (!redflag) {
       res.status(404).send({ message: 'redflag not found' });

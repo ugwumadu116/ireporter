@@ -15,7 +15,7 @@ ul {
 }
 
 header {
-  background: #0e0e0e;
+  background: #33b6ea;
   color: #ffffff;
   padding-top: 30px;
   min-height: 70px;
@@ -34,12 +34,12 @@ header li {
 }
 
 header #topic {
-  color: #33b6ea;
+  color: #ffffff;
   float: left;
 }
 
 header #topic h1 {
-  color: #33b6ea;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -49,7 +49,7 @@ header nav {
 }
 
 #welcome {
-  min-height: 800px;
+  min-height: 400px;
   background: url("../img/report.jpg") no-repeat 0 -400px;
   text-align: center;
   color: #ffffff;
@@ -64,18 +64,10 @@ header nav {
 #welcome p {
   font-size: 20px;
 }
-#Howitworks {
-  padding: 20px;
-  margin-top: 0px;
-  color: #0e0e0e;
-  background-color: #ffffff;
-  text-align: center;
-}
 #welcome2 {
   padding: 20px;
-  margin-top: 0px;
-  color: #ffffff;
-  background-color: #0e0e0e;
+  margin-top: 10px;
+  color: black;
   text-align: center;
 }
 
@@ -83,7 +75,7 @@ footer {
   padding: 20px;
   margin-top: 20px;
   color: #ffffff;
-  background-color: #0e0e0e;
+  background-color: #33b6ea;
   text-align: center;
 }
 
@@ -104,7 +96,6 @@ footer {
   color: #999999;
 }
 .final__register-wrapper {
-  background-image: linear-gradient(135deg, #0eeff0 30%, #088f90 90%);
   position: relative;
   z-index: 3;
   padding: 100px;
@@ -182,7 +173,7 @@ footer {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 40%;
+  width: 20%;
   text-align: center;
   float: left;
   margin: 2% 2% 2% 2%;
@@ -190,25 +181,6 @@ footer {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-.one-fourth {
-  width: 25%;
-  float: left;
-  text-align: center;
-  color: floralwhite;
-  margin-bottom: 20px;
-}
-#one-fourth1 {
-  background-color: #f1aa90;
-}
-#one-fourth2 {
-  background-color: #beb9ad;
-}
-#one-fourth3 {
-  background-color: #aadcd2;
-}
-#one-fourth4 {
-  background-color: #a2b2c1;
 }
 .container img {
   width: 100%;
