@@ -6,6 +6,7 @@ class Redflag {
     this.intervention = [];
   }
 
+
   create(data) {
     let today = new Date();
     let dd = today.getDate();
@@ -36,9 +37,11 @@ class Redflag {
     return this.intervention.find(reflect => reflect.id === id);
   }
 
+
   findAll() {
     return this.intervention;
   }
+
 
   update(id, data) {
     const redflag = this.findOne(id);
