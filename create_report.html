@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Affordable and professional web design" />
+    <meta
+      name="keywords"
+      content="web design, affordable web design, professional web design"
+    />
+    <meta name="author" content="Brad Traversy" />
+    <title>iReporter</title>
+    <link rel="stylesheet" href="./css/final.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="topic">
+          <a href="index.html"><h1>iReporter</h1></a>
+        </div>
+        <nav>
+          <ul>
+            <li class="current">Users Name</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="final-result">
+      <div class="content">
+        <section>
+          <div class="final__register-wrapper">
+            <div class="final__register-block">
+              <h3 class="final__register-title">Make A Report</h3>
+              <p>
+                Quickly make a <strong>RED FLAG</strong>|<strong>
+                  INTERVENTION</strong
+                >
+                report using the form below.
+              </p>
+              <form action="">
+                <label><strong>Date</strong></label>
+                <input type="date" placeholder="Date" name="date" required />
+                <label><strong>first Name</strong></label>
+                <input
+                  type="name"
+                  placeholder="firstname"
+                  name="firstname"
+                  required
+                />
+                <label><strong>Type</strong></label
+                ><br />
+                <select name="type" required>
+                  <option value="volvo">red-flag</option>
+                  <option value="saab">Intervention</option>
+                </select>
+                <br />
+                <br />
+                <label><strong>ADD LOCATION</strong></label>
+                <label><strong>Longitude</strong></label>
+                <input
+                  id="lon"
+                  type="text"
+                  placeholder="77.037692W"
+                  name="longitude"
+                  required
+                />
+                <label><strong>Latitude</strong></label>
+                <input
+                  id="lat"
+                  type="text"
+                  placeholder="38.898648N"
+                  name="latitude"
+                  required
+                />
+                <label><strong>Image</strong></label>
+                <input type="file" name="picture" id="picture" />
+
+                <label><strong>Report</strong></label
+                ><br />
+                <textarea rows="4" cols="50"> </textarea>
+                <input type="submit" value="Make A Report" />
+                <label><a href="mydashboard.html">Cancle</a></label>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer><p>iReporter, Copyright &copy; 2018</p></footer>
+  </body>
+</html>
