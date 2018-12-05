@@ -1,12 +1,11 @@
 import uuid from 'uuid';
 
 class Redflag {
-  // @param {object} data
   constructor() {
     this.redflags = [];
   }
 
-  // @returns {object} redflag object
+
   create(data) {
     let today = new Date();
     let dd = today.getDate();
@@ -32,19 +31,16 @@ class Redflag {
     return newredflag;
   }
 
-  // @param {uuid} id
-  // @returns {object} redflag object
+
   findOne(id) {
     return this.redflags.find(reflect => reflect.id === id);
   }
 
-  // @returns {object} returns all redflags
   findAll() {
     return this.redflags;
   }
 
-  // @param {uuid} id
-  // @param {object} data
+
   update(id, data) {
     const redflag = this.findOne(id);
     const index = this.redflags.indexOf(redflag);
@@ -61,7 +57,7 @@ class Redflag {
     return this.redflags[index];
   }
 
-  // @param {uuid} id
+
   delete(id) {
     const redflag = this.findOne(id);
     const index = this.redflags.indexOf(redflag);
