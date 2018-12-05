@@ -1,7 +1,7 @@
 import express from 'express';
 import RedflagController from '../controllers/redflagController';
 import midlleWareAuth from '../validator/checkAuth';
-import redflagAuth from '../validator/redflagAuth';
+// import redflagAuth from '../validator/redflagAuth';
 
 const router = express.Router();
 
@@ -12,8 +12,8 @@ router.post('/', midlleWareAuth, RedflagController.createRedflag);
 
 router.get('/:redflagID', midlleWareAuth, RedflagController.findOneRedflag);
 
-router.patch('/:redflagID', midlleWareAuth, redflagAuth, RedflagController.editRedflag);
+router.patch('/:redflagID', midlleWareAuth, RedflagController.editRedflag);
 
-router.delete('/:redflagID', midlleWareAuth, redflagAuth, RedflagController.deleteRedflag);
+router.delete('/:redflagID', midlleWareAuth, RedflagController.deleteRedflag);
 
 export default router;
