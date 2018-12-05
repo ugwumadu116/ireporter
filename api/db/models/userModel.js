@@ -1,7 +1,6 @@
 import uuid from 'uuid';
 
 class User {
-  // @param {object} data
   constructor() {
     this.users = [];
   }
@@ -30,12 +29,12 @@ class User {
     return this.users.find(reflect => reflect.email === email);
   }
 
-  // @returns {object} returns all users
+
   findAll() {
     return this.users;
   }
 
-  // @param {uuid} id
+
   delete(id) {
     const user = this.findOne(id);
     const index = this.users.indexOf(user);
