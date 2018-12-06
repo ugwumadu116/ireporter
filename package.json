@@ -7,7 +7,7 @@
   "description": "iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public Andela Developer Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require babel-register",
+    "test": "nyc --reporter=html --reporter=text mocha --require babel-register",
     "start:dev": "nodemon --exec babel-node -- index.js",
     "start": "node --require babel-register -- index.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls"

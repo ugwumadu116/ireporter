@@ -1,8 +1,6 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 import jwt from 'jsonwebtoken';
-// // import RedflagM from '../api/db/models/redflagModal';
-// import userSignup from '../api/controllers/userController';
 import server from '../app';
 
 const should = chai.should();

@@ -17,4 +17,3 @@ router.patch('/:redflagID', midlleWareAuth, redflagAuth, RedflagController.editR
 router.delete('/:redflagID', midlleWareAuth, redflagAuth, RedflagController.deleteRedflag);
 
 export default router;
-// tested

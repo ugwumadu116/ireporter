@@ -135,4 +135,3 @@ API is deployed at [here](https://bootcamp-andela-ireporter.herokuapp.com/) on h
 		<td>Delete intervention</td>
 	</tr>
 </table>
-# Finished
