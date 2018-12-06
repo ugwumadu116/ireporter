@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 
 
 app.use(`${prefix}/red-flags`, redflagRoutes);
-app.use(`${prefix}/intervention`, interventionRoutes);
+app.use(`${prefix}/interventions`, interventionRoutes);
 app.use(`${prefix}/user`, userRoutes);
 app.use(`${prefix}/admin`, adminRoutes);
 
