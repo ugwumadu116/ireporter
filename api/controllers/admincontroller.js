@@ -48,4 +48,3 @@ class adminController {
 }
 
 export default adminController;
-// peace

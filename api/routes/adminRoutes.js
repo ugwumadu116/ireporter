@@ -11,5 +11,3 @@ router.get('/', midlleWareAuth, adminController.findAllAdmins);
 router.patch('/:adminID', midlleWareAuth, adminController.editAdmin);
 
 export default router;
-
-// peace
