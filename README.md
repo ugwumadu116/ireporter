@@ -135,3 +135,16 @@ API is deployed at [here](https://bootcamp-andela-ireporter.herokuapp.com/) on h
 		<td>Delete intervention</td>
 	</tr>
 </table>
+
+### Prerequisites
+`node.js v10.13.0` recommended;  or greater recommended
+
+## Built With
+- [Node.js](https://nodejs.org/en/)/Express - Server-side framework
+- [Mocha/Chai](https://mochajs.org/) - Testing framework
+- [ESLint](https://eslint.org/) - Linting library
+- [Airbnb style guide](https://github.com/airbnb/javascript)
+- [Pivotal Tracker](https://www.pivotaltracker.com/dashboard) - Project management tool
+- [Babel 7](https://babeljs.io/) - Compiling >=ES2015 features to native JS
+- [Postman](https://www.getpostman.com/) - Testing API endpoints
+- Development Approach - TDD/BDD
