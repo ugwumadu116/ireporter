@@ -7,6 +7,9 @@ import interventionRoutes from './api/routes/interventionRoutes';
 import userRoutes from './api/routes/userRoutes';
 import adminRoutes from './api/routes/adminRoutes';
 
+const { Client } = require('pg');
+require('dotenv').config();
+
 const app = express();
 const prefix = '/api/v1';
 
@@ -32,7 +35,23 @@ app.use(`${prefix}/red-flags`, redflagRoutes);
 app.use(`${prefix}/interventions`, interventionRoutes);
 app.use(`${prefix}/user`, userRoutes);
 app.use(`${prefix}/admin`, adminRoutes);
-
+app.get('/books', (req, res) => {
+  const client = new Client();
+  client
+    .connect()
+    .then(() => {
+      console.log('coneection completed');
+      return client.query('SELECT * FROM books');
+    })
+    .then((result) => {
+      // console.log('result:', result.rows);
+      res.render('book-list', { books: result.rows });
+    })
+    .catch((err) => {
+      console.log('the ERROR:', err.message);
+      res.send('Something went wroung');
+    });
+});
 
 app.use((req, res, next) => {
   const error = new Error('Not Found!');
