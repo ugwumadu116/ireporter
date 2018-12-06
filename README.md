@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/ugwumadu116/ireporter.svg?branch=develop)](https://travis-ci.org/ugwumadu116/ireporter)
 [![codecov](https://codecov.io/gh/Dikaeinstein/book-a-meal/branch/develop/graph/badge.svg)](https://codecov.io/gh/Dikaeinstein/book-a-meal)
-[![Maintainability](https://api.codeclimate.com/v1/badges/1104abe96a3ded2f2b39/maintainability)](https://codeclimate.com/github/Dikaeinstein/book-a-meal/maintainab
 # ireporter
 iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention
 
