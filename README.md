@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 [![Maintainability](https://api.codeclimate.com/v1/badges/e24905f96622af17a6c7/maintainability)](https://codeclimate.com/github/ugwumadu116/ireporter/maintainability)
 [![Build Status](https://travis-ci.org/ugwumadu116/ireporter.svg?branch=develop)](https://travis-ci.org/ugwumadu116/ireporter)
 [![Coverage Status](https://coveralls.io/repos/github/ugwumadu116/ireporter/badge.svg?branch=develop)](https://coveralls.io/github/ugwumadu116/ireporter?branch=develop)
 
+=======
+[![Build Status](https://travis-ci.org/ugwumadu116/ireporter.svg?branch=develop)](https://travis-ci.org/ugwumadu116/ireporter)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e24905f96622af17a6c7/maintainability)](https://codeclimate.com/github/ugwumadu116/ireporter/maintainability)
+[![Coverage Status](https://coveralls.io/repos/github/ugwumadu116/ireporter/badge.svg?branch=develop)](https://coveralls.io/github/ugwumadu116/ireporter?branch=develop)
+>>>>>>> b1088a13e803c37fde473e3797e1fad7d0f3aa4b
 # ireporter
 iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention.
 
@@ -139,3 +145,16 @@ API is deployed at [here](https://bootcamp-andela-ireporter.herokuapp.com/) on h
 		<td>Delete intervention</td>
 	</tr>
 </table>
+
+### Prerequisites
+`node.js v10.13.0` recommended;  or greater recommended
+
+## Built With
+- [Node.js](https://nodejs.org/en/)/Express - Server-side framework
+- [Mocha/Chai](https://mochajs.org/) - Testing framework
+- [ESLint](https://eslint.org/) - Linting library
+- [Airbnb style guide](https://github.com/airbnb/javascript)
+- [Pivotal Tracker](https://www.pivotaltracker.com/dashboard) - Project management tool
+- [Babel 7](https://babeljs.io/) - Compiling >=ES2015 features to native JS
+- [Postman](https://www.getpostman.com/) - Testing API endpoints
+- Development Approach - TDD/BDD
