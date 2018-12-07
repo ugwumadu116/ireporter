@@ -8,11 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc --reporter=html --reporter=text mocha --require babel-register",
-<<<<<<< HEAD
-    "start:dev": "node --exec babel-node -- index.js",
-=======
     "start:dev": "nodemon --exec babel-node -- index.js",
->>>>>>> b1088a13e803c37fde473e3797e1fad7d0f3aa4b
     "start": "node --require babel-register -- index.js",
     "coverage": "nyc --reporter=html --reporter=text | coveralls"
   },
