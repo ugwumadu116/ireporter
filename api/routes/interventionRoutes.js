@@ -5,9 +5,17 @@ import interventAuth from '../validator/interventionAuth';
 
 const router = express.Router();
 
-router.get('/', midlleWareAuth, interventionController.findAllInterventions);
+router.get(
+  '/',
+  midlleWareAuth,
+  interventionController.findAllInterventions,
+);
 
-router.post('/', midlleWareAuth, interventionController.createIntervention);
+router.post(
+  '/',
+  midlleWareAuth,
+  interventionController.createIntervention,
+);
 
 router.get('/:interventionID', midlleWareAuth, interventionController.findOneIntervention);
 

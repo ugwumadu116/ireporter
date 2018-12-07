@@ -5,7 +5,6 @@ class Redflag {
     this.redflags = [];
   }
 
-
   create(data) {
     let today = new Date();
     let dd = today.getDate();
@@ -40,20 +39,19 @@ class Redflag {
     return this.redflags;
   }
 
-
   update(id, data) {
     const redflag = this.findOne(id);
     const index = this.redflags.indexOf(redflag);
-    this.redflags[index].createdBy = data['createdBy'] || redflag.createdBy;
-    this.redflags[index].location = data['location'] || redflag.location;
-    this.redflags[index].comment = data['comment'] || redflag.comment;
+    this.redflags[index].createdBy = redflag.createdBy;
+    this.redflags[index].location = redflag.location;
+    this.redflags[index].comment = redflag.comment;
     return this.redflags[index];
   }
 
   updateStatus(id, data) {
     const redflag = this.findOne(id);
     const index = this.redflags.indexOf(redflag);
-    this.redflags[index].status = data['status'] || redflag.status;
+    this.redflags[index].status = redflag.status;
     return this.redflags[index];
   }
 

@@ -6,15 +6,36 @@ import redflagAuth from '../validator/redflagAuth';
 const router = express.Router();
 
 
-router.get('/', RedflagController.findAllRedflags);
+router.get(
+  '/',
+  RedflagController.findAllRedflags,
+);
 
-router.post('/', midlleWareAuth, RedflagController.createRedflag);
+router.post(
+  '/',
+  midlleWareAuth,
+  RedflagController.createRedflag,
+);
 
-router.get('/:redflagID', midlleWareAuth, RedflagController.findOneRedflag);
+router.get(
+  '/:redflagID',
+  midlleWareAuth,
+  RedflagController.findOneRedflag,
+);
 
-router.patch('/:redflagID', midlleWareAuth, redflagAuth, RedflagController.editRedflag);
+router.patch(
+  '/:redflagID',
+  midlleWareAuth,
+  redflagAuth,
+  RedflagController.editRedflag,
+);
 
-router.delete('/:redflagID', midlleWareAuth, redflagAuth, RedflagController.deleteRedflag);
+router.delete(
+  '/:redflagID',
+  midlleWareAuth,
+  redflagAuth,
+  RedflagController.deleteRedflag,
+);
 
 export default router;
 // tested
