@@ -24,41 +24,6 @@ iReporter enables any/every citizen to bring any form of corruption to the notic
 - Get All Reports for all Users
 - Get All Reports for a Specific User
 
-## Installation
-
-Clone repo to your local machine:
-
-```git
-git clone https://github.com/ugwumadu116/ireporter
-```
-
-**Install dependencies and run locally**<br/>
-
-```
-npm install
-```
-
-Create .env like the .env.sample file, just replace with your own enviroment variables.
-
-Now start the server:
-
-```npm
-npm start
-npm start-dev     /* Keep watching files for changes */
-```
-
-## Testing
-
-To run tests:
-
-```npm
-npm test
-```
-
-## API
-
-API is deployed at [here](https://bootcamp-andela-ireporter.herokuapp.com/) on heroku.
-
 ### API Routes
 
 <table>
