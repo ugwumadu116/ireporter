@@ -23,7 +23,7 @@
     "url": "https://github.com/ugwumadu116/ireporter/issues"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
